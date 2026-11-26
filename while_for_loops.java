@@ -45,13 +45,13 @@ public class while_for_loops {
             if (num == 0) {
                 System.out.println("The value of 0! = 1");
             } else if (num < -1) {
-                System.out.println("\"factorial value can only be counted for a positive number.\"\nTry again!");
+                System.out.println("\"Factorial value can only be counted for a positive number.\"\nTry again!");
             } else if (num > 0){
-                int total = 1;
+                long total = 1L;
                 for (int i = 2; i <= num; i++) {
                     total = total * i;
                 }
-                System.out.printf("The value of %d! = %d\n", num, total);
+                System.out.println("The value of "+ num + "! = " + total);
             }
         } while (num != -1);
 
@@ -82,7 +82,7 @@ public class while_for_loops {
 
 
         System.out.println("\nSum of even and odd integers");
-        System.out.print("Calculate and print the sum of the even and the odd numbers for a set of integers.");
+        System.out.println("Calculate and print the sum of the even and the odd numbers for a set of integers.");
 // set of integers input from user as a string, should be entered with spaces between them as the following example: 9 8 9 6
 
         int intNum;
